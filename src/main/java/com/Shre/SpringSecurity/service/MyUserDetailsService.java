@@ -1,6 +1,8 @@
 package com.Shre.SpringSecurity.service;
 
 import com.Shre.SpringSecurity.dao.UserRepository;
+import com.Shre.SpringSecurity.model.User;
+import com.Shre.SpringSecurity.model.UserPrincipal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
