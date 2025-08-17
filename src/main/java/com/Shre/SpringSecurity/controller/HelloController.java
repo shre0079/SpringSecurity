@@ -1,6 +1,6 @@
 //csrf- cross site request forgery
 
-package com.Shre.SpringSecurity;
+package com.Shre.SpringSecurity.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.bind.annotation.GetMapping;
