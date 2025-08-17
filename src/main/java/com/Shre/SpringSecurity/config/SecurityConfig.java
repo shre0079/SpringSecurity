@@ -37,4 +37,15 @@ public class SecurityConfig{
 
         return daoAuthenticationProvider;
     }
+
+//    @Bean
+//    public UserDetailsService userDetailsService() {
+//        UserDetails userdetails = User
+//                .withDefaultPasswordEncoder()
+//                .username("user")
+//                .password("password")
+//                .roles("USER")
+//                .build();
+//        return new InMemoryUserDetailsManager(userdetails);
+//    } //static username & password
 }
