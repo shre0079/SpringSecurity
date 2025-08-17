@@ -29,13 +29,12 @@ public class SecurityConfig{
     }
 
     @Bean
-    public UserDetailsService userDetailsService() {
-        UserDetails userdetails = User
-                .withDefaultPasswordEncoder()
-                .username("user")
-                .password("password")
-                .roles("USER")
-                .build();
-        return new InMemoryUserDetailsManager(userdetails);
+    public AuthenticationProvider authenticationProvider() {
+
+        DaoAuthenticationProvider daoAuthenticationProvider = new DaoAuthenticationProvider();
+        daoAuthenticationProvider.setUserDetailsService(userDetailsService);
+        daoAuthenticationProvider.setPasswordEncoder(new BCryptPasswordEncoder(12));
+
+        return daoAuthenticationProvider;
     }
 }
