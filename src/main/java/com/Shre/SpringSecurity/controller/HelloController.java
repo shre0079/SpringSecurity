@@ -1,3 +1,5 @@
+//csrf- cross site request forgery
+
 package com.Shre.SpringSecurity;
 
 import jakarta.servlet.http.HttpServletRequest;
@@ -9,11 +11,11 @@ public class HelloController {
 
     @GetMapping("hello")
     public String helloController(HttpServletRequest request) {
-        return "Hello World"+ request.getSession().getId();
+        return "Hello World "+ request.getSession().getId();
     }
 
     @GetMapping("about")
     public String about(HttpServletRequest request) {
-        return "Shreyash"+ request.getSession().getId();
+        return "Shreyash "+ request.getSession().getId();
     }
 }
