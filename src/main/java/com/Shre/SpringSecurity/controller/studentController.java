@@ -1,4 +1,4 @@
-package com.Shre.SpringSecurity;
+package com.Shre.SpringSecurity.controller;
 
 import com.Shre.SpringSecurity.model.Student;
 import jakarta.servlet.http.HttpServletRequest;
