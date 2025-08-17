@@ -12,6 +12,7 @@ import org.antlr.v4.runtime.misc.NotNull;
 public class User {
     @Id
     private int id;
+    @NotNull
     private String username;
     private String password;
 }
