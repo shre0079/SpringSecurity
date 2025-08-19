@@ -11,8 +11,8 @@ import org.antlr.v4.runtime.misc.NotNull;
 @Table(name="users")
 public class User {
     @Id
-    private int id;
-    @NotNull
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String username;
     private String password;
 }
