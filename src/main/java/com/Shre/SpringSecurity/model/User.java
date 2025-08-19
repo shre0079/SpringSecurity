@@ -2,7 +2,6 @@ package com.Shre.SpringSecurity.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import org.antlr.v4.runtime.misc.NotNull;
 
 @Data
 @Table(name = "users")
