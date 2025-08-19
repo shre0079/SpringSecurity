@@ -1,4 +1,4 @@
-package com.Shre.SpringSecurity;
+package com.Shre.SpringSecurity.service;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
