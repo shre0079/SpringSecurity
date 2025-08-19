@@ -42,6 +42,11 @@ public class SecurityConfig{
         return daoAuthenticationProvider;
     }
 
+    @Bean
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration  authenticationConfiguration) throws Exception {
+        return authenticationConfiguration.getAuthenticationManager();
+    }
+
 //    @Bean
 //    public UserDetailsService userDetailsService() {
 //        UserDetails userdetails = User
