@@ -1,8 +1,8 @@
 package com.Shre.SpringSecurity.controller;
 
-import com.Shre.SpringSecurity.JwtService;
-import com.Shre.SpringSecurity.model.User;
+import com.Shre.SpringSecurity.service.JwtService;
 import com.Shre.SpringSecurity.service.UserService;
+import com.Shre.SpringSecurity.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
