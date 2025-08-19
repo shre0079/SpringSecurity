@@ -5,6 +5,7 @@ import lombok.Data;
 import org.antlr.v4.runtime.misc.NotNull;
 
 @Data
+@Table(name = "users")
 @Entity
 @Table(name="users")
 public class User {
