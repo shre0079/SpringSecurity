@@ -15,6 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     @Autowired
+    JwtService jwtService;
+
+    @Autowired
+    AuthenticationManager authenticationManager;
+
+    @Autowired
     private UserService userService;
 
     @PostMapping("register")
