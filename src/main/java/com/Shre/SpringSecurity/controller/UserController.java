@@ -27,4 +27,14 @@ public class UserController {
     private User register(@RequestBody User user){
         return userService.saveUser(user);
     }
+
+    @PostMapping("login")
+    public String login(@RequestBody User user){
+        Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword()));
+        if(authentication.isAuthenticated()){
+            return jwtService.generateToken(user.getUsername());
+        }else {
+            return "Login Fail";
+        }
+    }
 }
